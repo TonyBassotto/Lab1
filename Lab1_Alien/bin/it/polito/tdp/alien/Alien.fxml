@@ -57,7 +57,7 @@
                   </ImageView>
                </children>
             </HBox>
-            <TextArea fx:id="txtResult" prefHeight="173.0" prefWidth="493.0" text="Welcome to the RISEFIELD MADEFAKER!" />
+            <TextArea fx:id="txtResult" prefHeight="173.0" prefWidth="493.0" promptText="Welcome to the RISEFIELD MADEFAKER!" />
             <Button fx:id="btnReset" mnemonicParsing="false" onAction="#doReset" text="Clear Text" translateX="407.0">
                <VBox.margin>
                   <Insets top="5.0" />

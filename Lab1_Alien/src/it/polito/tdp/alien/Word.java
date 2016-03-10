@@ -1,6 +1,6 @@
 package it.polito.tdp.alien;
 
-public class Word {
+public class Word implements Comparable<Word>{
 	private String alienWord;
 	private String translation;
 	private AlienDictionary ad;
@@ -30,5 +30,15 @@ public class Word {
 	public String compare(String alienWord){
 		return ad.chechD(alienWord);
 	}
+	public String toString(){
+		return alienWord+" "+translation;
+	}
+
+
+	@Override
+	public int compareTo(Word aa) {
+		return this.getAlienWord().compareTo(aa.getAlienWord());
+	}
+
 
 }
